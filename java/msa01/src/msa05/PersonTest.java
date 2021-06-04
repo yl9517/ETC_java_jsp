@@ -1,0 +1,36 @@
+package msa05;
+
+class Person{
+	
+	String name;
+	int age;
+	String addr;
+	
+}
+public class PersonTest {
+
+	public static void main(String[] args) {
+		Person p1 = new Person();
+		//pq reference variable       new Pserson() : 객체,인스턴스
+			p1.name="이여름";
+			p1.age=24;
+			p1.addr="경기";
+			
+		Person p2 = new Person();
+			p2.name="이예나";
+			p2.age=25;
+			p2.addr="서울";
+
+		System.out.println(p1.name);
+		System.out.println(p1.age);
+		System.out.println(p1.addr);
+		System.out.println("==========");
+		System.out.println(p2.name);
+		System.out.println(p2.age);
+		System.out.println(p2.addr);
+	
+			
+
+	}
+
+}
