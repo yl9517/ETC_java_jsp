@@ -1,0 +1,46 @@
+package msa06;
+
+class Student3{
+	
+	//필드
+	String name;
+	int age;
+	String juso;
+	
+	//생성자	
+		// [오버로딩] : 이름은 같지만 매개변수타입이 (순서 포함) 하나라도 다르면 다른 메소드 취급을 하는 것	
+	Student3(String name, int age,String juso){
+		
+		this.name = name; // this : 참조변수  (자기 자신의 객체를 가르킴)
+		this.age = age;
+		this.juso=juso;
+	}
+	Student3(String name, int age){
+		this.name = name; 
+		this.age = age;
+	}
+	Student3(String name,String juso){
+		this.name = name; 
+		this.juso=juso;
+	}
+	
+	
+	//메소드
+	void print() {
+		System.out.println("이름 : "+name);
+		System.out.println("나이 : "+age);
+		System.out.println("주소 : "+juso);
+	}
+}
+public class ConstructorTest3{
+
+	public static void main(String[] args) {
+		Student3 s1 = new Student3("홍길동", 10, "서울");
+		Student3 s2 = new Student3("홍길순", 20, "경기");
+		Student3 s3 = new Student3("홍길삼", 30, "서울");
+		
+		s1.print();
+		s2.print();
+		
+	}
+}
