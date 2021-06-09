@@ -1,0 +1,25 @@
+package msa08;
+
+public class A {
+/*
+ * 	consturctor -> supersub -> override -> bank
+ * 
+ * 
+ * 
+ * 	각 클래스 사용법은 https://docs.oracle.com/javase/8/docs/api/ 여기서 알 수 있음
+ * 
+ * 
+ *  * [상속] 
+ *  extends (부모)클래스명 : 부모클래스의 내용 상속
+ *  super() 
+ *	  ┗ 생성자 super : 부모클래스 생성자 호출 (반드시 매개값도 같이 전달)
+ *    ┗ 참조변수 super : 부모클래스의 멤버변수나 메소드에 접근하고자 할때 ( super.변수/super.메서드() )
+ * 
+ *  * [오버라이딩] : 부모클래스로부터 물려받은 메소드를 자식클래스 자신에게 맞게 수정하여 덮어 쓴 것
+ *  			    (상속관계에 있는 클래스 간에 메소드를 재정의하여 다형성을 지원)
+ *
+ * 
+ * 
+ */
+	
+}
