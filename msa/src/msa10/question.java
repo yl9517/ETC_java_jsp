@@ -1,4 +1,4 @@
-package msa;
+package msa10;
 /*
  * Main에서 구현한 배열을 이용한 성적관리 프로그램을 memberPro에서 하도록 프로그램을 변경하라.
  * 
