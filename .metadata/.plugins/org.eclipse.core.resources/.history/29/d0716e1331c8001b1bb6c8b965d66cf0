@@ -1,0 +1,26 @@
+package msa07;
+
+class Sample1{
+	
+	static {
+		System.out.println("static 초기화 블록");
+	}
+	{
+		System.out.println("초기화 블록");
+	}
+	
+	Sample1(){
+		System.out.println("생성자!!");
+	}
+	
+}
+
+public class StaticTest5 {
+
+	public static void main(String[] args) {
+		Sample1 ins = new Sample1();
+		System.out.println("=");
+		Sample1 ins2 = new Sample1();
+	}
+
+}

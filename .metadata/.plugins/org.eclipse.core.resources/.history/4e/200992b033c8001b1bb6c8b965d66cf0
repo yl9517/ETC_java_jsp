@@ -1,0 +1,117 @@
+package msa07;
+//최대 10명까지 이름,국어,영어 입력받아 총점,평균,성취도 출력
+//총점 순으로 내림차 정렬, 배열로 입력
+/*
+ *입력예시 ) 입력할 인원수는 ? [2]  //11이상 입력시 -> 인원을 잘못 입력하였습니다.
+ *        이름 : [이름]
+ *        국어 : [점수]
+ *        영어 : [점수]
+ *        ...
+ *
+ * 출력예시) 이름   국어   영어   총점    평균   성취도
+ *        홍길동  80  70  150  75   C
+ *        홍길순  60  40  100  50   F
+ * 
+ */
+
+import java.util.Scanner;
+
+class Sort{
+	
+	
+}
+public class Sort_qeustion {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.print("입력할 인원수는 ? : ");
+		int num = sc.nextInt();
+		
+		//1차원 배열
+		String[] name = new String[num];
+		int[] kor = new int[num];
+		int[] eng = new int[num];		
+		int[] tot = new int[num];
+		float[] avg = new float[num];
+		char[] rank = new char[num];
+
+		String[][] Student = new String[num][5];
+		
+		if(num > 10)
+			System.out.println("인원을 잘못 입력하였습니다.");
+		
+		//인원수만큼 이름,국어,영어 입력
+		for(int i=0; i<num; i++) {
+			System.out.print("이름 : ");
+			name[i] = sc.next();
+			System.out.println("국어 : ");
+			kor[i] = sc.nextInt();
+			System.out.println("영어 : ");
+			eng[i] = sc.nextInt();
+			
+			tot[i] = kor[i]+eng[i];
+			avg[i] = (kor[i]+eng[i])/2;
+			
+			if(avg[i]>=90)
+				rank[i] = 'A';
+			else if(avg[i]>=80)
+				rank[i] = 'B';
+			else if(avg[i]>=70)
+				rank[i] = 'C';
+			else if(avg[i]>=60)
+				rank[i] = 'D';
+			else
+				rank[i] = 'F';
+		}
+		
+		
+		int temp;
+		
+		//총점 기준으로 내림차순
+		for(int i=0; i<tot.length-1; i++) {
+			for(int j=i+1; j<tot.length; j++) {
+				
+				if(tot[i]<tot[j]) { //지금 총점만 바뀜
+					temp = tot[i];
+					tot[i] = tot[j];
+					tot[j] = temp;
+				}
+				
+			}
+		}
+		
+		
+		
+		
+		
+		//2차원 배열
+		System.out.print("입력할 인원수는 ? : ");
+		int su = sc.nextInt();
+		
+		if(su > 10)
+			System.out.println("인원을 잘못 입력하였습니다.");
+		
+		String[][] students = new String[num][5];
+		
+		for(int i=0; i<su; i++) {
+			System.out.print("이름 : ");
+			students[i][0] = sc.next();
+			System.out.print("국어 : ");
+			students[i][1] = sc.next();
+			System.out.print("영어 : ");
+			students[i][2] = sc.next();
+			
+			students[i][3] = String.valueOf(Integer.parseInt(students[i][1])+Integer.parseInt(students[i][2]));
+			students[i][4] = String.valueOf(((Integer.parseInt(students[i][1])+Integer.parseInt(students[i][2]))/2));
+			
+			
+			
+		}
+		
+		
+
+	}
+
+}

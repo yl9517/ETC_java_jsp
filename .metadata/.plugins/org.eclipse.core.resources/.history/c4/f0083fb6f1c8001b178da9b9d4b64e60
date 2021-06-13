@@ -1,0 +1,14 @@
+package msa08;
+
+public class Bank_CreditLine extends Bank {
+
+	public Bank_CreditLine(String bankNo, String name, int balance) {
+		super(bankNo, name, balance);
+	}
+	
+	@Override
+	public void withdraw(int money) {
+		
+	}
+
+}

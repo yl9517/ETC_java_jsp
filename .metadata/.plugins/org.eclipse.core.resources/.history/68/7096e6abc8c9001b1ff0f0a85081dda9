@@ -1,0 +1,25 @@
+package msa06;
+
+class Student2{
+	
+	//积己磊	
+	Student2(){
+		System.out.println("-no arguement 积己磊(后 积己磊,兵烹积己磊,叼弃飘 积己磊)");
+	}
+	Student2(int su1){
+		System.out.println("积己磊 龋免 : "+su1);
+	}
+	Student2(String name){
+		System.out.println("积己磊 龋免 : "+name);
+	}
+}
+public class ConstructorTest2{
+
+	public static void main(String[] args) {
+
+		Student2 s0 = new Student2();
+		Student2 s1 = new Student2(30);
+		Student2 s2 = new Student2("hong");
+		
+	}
+}

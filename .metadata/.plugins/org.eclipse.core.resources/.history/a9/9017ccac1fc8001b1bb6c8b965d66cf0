@@ -1,0 +1,25 @@
+package msa07;
+
+class Static1{
+	static int su=10;
+}
+
+public class StaticTest {
+
+	public static void main(String[] args) {
+
+		Static1 ins = new Static1();
+		Static1 ins2 = new Static1();
+		Static1 ins3 = new Static1();
+
+		ins.su=10;
+		ins2.su=100;
+		ins3.su=1000;
+		
+		System.out.println(ins.su);
+		System.out.println(ins2.su);
+		System.out.println(ins3.su);
+		System.out.println(Static1.su);
+	}
+
+}

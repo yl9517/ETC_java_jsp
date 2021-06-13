@@ -1,0 +1,17 @@
+package msa08;
+
+public class ConstructorTest {
+
+	
+	public static void main(String[] args) {
+	//https://docs.oracle.com/javase/8/docs/api/ 여기서 사용법 알 수 있음
+		
+		int data = Math.abs(-20);
+		System.out.println(data);
+	
+		int data2 = Math.max(50, 10);
+		System.out.println(data2);
+		
+	}
+
+}

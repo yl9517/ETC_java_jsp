@@ -1,0 +1,37 @@
+package msa06;
+/*
+ * 캡슐화 (private)
+ * 
+ */
+class Access2{
+	
+	private int su;
+	
+	//생성자
+	Access1(){
+		
+	} 
+	
+	Access2(int su){
+		if(su<0)
+			su=0;
+		this.su=su;
+	}
+	
+	//메소드
+	void prt() {
+		System.out.println("Su : "+su);
+	}
+}
+public class AccessTest {
+	public static void main(String[] args) {
+		Access2 ins = new Access2();
+//		ins.su = -100;    >>   priavte 필드라서 접근 못함!!!
+//		System.out.println(ins.su);
+
+		//직접x, 생성자를 통해 정해놓은 규격에 맞추에 값을 넣을 수 있음
+		Access2 ins2 = new Access2(20);
+		ins2.prt();
+		
+	}
+}

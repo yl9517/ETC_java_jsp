@@ -1,0 +1,11 @@
+package msa10;
+
+public class P339_5_super {
+
+	public String name;
+	
+	public P339_5_super(String name) {
+		this.name=name;
+	}
+
+}

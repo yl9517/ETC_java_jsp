@@ -1,0 +1,13 @@
+package msa06;
+
+
+public class Access3Test {
+	public static void main(String[] args) {
+		String[] be = {"10","20","30"};
+		
+		Access3 arr = new Access3();
+		
+		arr.prt(be);
+
+	}
+}

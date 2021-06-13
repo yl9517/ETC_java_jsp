@@ -1,0 +1,57 @@
+package msa07;
+/*
+	final : 상수 (변하지 않는 값)
+ *  
+ *  
+ */
+class Final1{
+	final int su=20; //su 초기화
+	final int su2;
+	final int[] su3;
+	
+	//생성자    //객체가 만들어질 시점에 생성자도 만들어지므로 생성자에서 동적초기화 가능
+	public Final1(int su2) { //su2 초기화 //su3도 초기화 되어있지 않으므로 무조건 초기화 시켜줄 생성자 필요
+		
+		this.su2=su2;  //외부 동적초기화
+		
+		su3 = new int[4];	//직접 초기화
+		
+		for(int i:su3)
+			su3[i]=i*20;
+	}
+	
+// private 일 시
+//	public void setSu(int su) { //final이라서 su 변경메소드 set 불가
+//		this.su=su;
+//	}
+	
+	
+	
+	
+}
+
+public class StaticTest3 {
+
+	public static void main(String[] args) {
+		final int su =20;
+		//su=40; //final로 선언된 수는 수정 불가
+		
+		System.out.println(su);  //20
+		
+		final int su1;
+		su1 = 100;
+		//su1+=200;  //수정불가
+		System.out.println(su1); //100
+		
+	
+		//-----------------------------
+		
+		Final1 f1 = new Final1(30);
+		//f1.su2=20; //수정 불가
+		
+		System.out.println(f1.su);   //20
+		System.out.println(f1.su2);  //30
+		
+	}
+
+}

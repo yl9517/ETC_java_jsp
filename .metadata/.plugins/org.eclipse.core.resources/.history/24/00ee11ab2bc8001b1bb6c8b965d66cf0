@@ -1,0 +1,23 @@
+package msa07;
+/*
+	final : 상수 (변하지 않는 값)
+ *  
+ *  
+ */
+
+public class StaticTest3 {
+
+	public static void main(String[] args) {
+		final int su =20;
+		//su=40; //final로 선언된 수는 수정 불가
+		
+		System.out.println(su);
+		
+		final int su1;
+		su1 = 100;
+		//su1+=200;
+		System.out.println(su1);
+		
+	}
+
+}

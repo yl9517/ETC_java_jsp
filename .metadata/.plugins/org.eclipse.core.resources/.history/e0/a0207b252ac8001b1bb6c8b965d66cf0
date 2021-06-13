@@ -1,0 +1,17 @@
+package msa07;
+/*
+ *  static 추가설명
+ *  
+ *  
+ */
+class Static3{
+	
+	
+}
+
+public class StaticTest3 {
+
+	public static void main(String[] args) {
+	}
+
+}

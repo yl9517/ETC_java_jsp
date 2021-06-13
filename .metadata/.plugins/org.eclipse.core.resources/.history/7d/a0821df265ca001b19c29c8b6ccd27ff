@@ -1,0 +1,33 @@
+package t10_3;
+/*
+ * 
+ */
+abstract class Dog{
+	public void sound() {
+		System.out.println("∏€∏€");
+	}
+	public void eat() {
+		System.out.println("π‰¿ª ∏‘Ω¿¥œ¥Ÿ.");
+	}
+	public abstract void act(); //√ﬂªÛ∏ﬁº“µÂ
+		
+	
+}
+
+
+class GoldenRetriever extends Dog{
+	
+}
+public class AbstractTest {
+
+	public static void main(String[] args) {
+		
+//		Dog ins = new Dog(); //abstract¿Ã±‚ ∂ßπÆø° ø°∑Ø
+		GoldenRetriever ins = new GoldenRetriever();
+		
+		ins.sound();
+		
+		
+	}
+
+}

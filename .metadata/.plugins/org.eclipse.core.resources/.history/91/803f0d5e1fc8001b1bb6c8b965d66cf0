@@ -1,0 +1,22 @@
+package msa07;
+
+public class A {
+/*
+ * constructor -> method -> question -> sort -> filed -> argu 인자
+ *                                      정렬                            매개변수가 몇개인지 모름
+ * 
+ * 
+ *   * [캡슐화] 정보은닉 (private) 외부에서 직접접근 불가
+ *		-setter : 해당 메소드를 통해 필드값 변경
+ *		-getter : 해당 메소드를 통해 필드값 호출
+ * 
+ *   * [메소드 오버로딩] method overloading
+ *    - 같은 클래스 내에서 이름은 같으나 매개변수의 타입,순서,갯수가 하나라도 다르면 다른 메소드로 인식
+ *    - 단,리턴타입과는 무관
+ *    
+ *    
+ *   * [정렬]
+ * 
+ * 
+ */
+}

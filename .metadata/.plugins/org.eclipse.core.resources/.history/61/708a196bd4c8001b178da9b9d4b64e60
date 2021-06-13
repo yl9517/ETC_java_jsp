@@ -1,0 +1,21 @@
+package msa08;
+
+
+class Super3{
+	public Super3{
+		System.out.println("super3 constructor");
+	}
+}
+
+class Sub3 extends Super3{
+	
+}
+
+public class SuperSubTest3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

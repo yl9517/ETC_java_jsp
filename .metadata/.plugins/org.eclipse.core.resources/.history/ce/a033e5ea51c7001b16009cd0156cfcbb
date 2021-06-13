@@ -1,0 +1,42 @@
+package msa06;
+
+class Person4{
+	
+	//鞘靛
+	String name;
+	int age;
+	String addr;
+	String phone;
+	
+	//积己磊	
+	Person4(String name, int age,String addr,String phone){
+		
+		this(name,age,addr);
+		//this.phone=phone;
+		System.out.println("积己磊4");
+	}
+	Person4(String name, int age,String addr){	
+		this.name = name; 
+		this.age = age;
+		this.addr=addr;
+		System.out.println("积己磊3");
+	}
+	Person4(String name, int age){	
+		this.name = name;
+		this.age = age;
+		System.out.println("积己磊2");
+	}
+	Person4(String name){	
+		this.name = name;
+		System.out.println("积己磊1");
+	}
+	
+}
+public class ConstructorTest4{
+
+	public static void main(String[] args) {
+		
+		Person4 p1 = new Person4("全辨悼",10,"辑匡","01023");
+		
+	}
+}

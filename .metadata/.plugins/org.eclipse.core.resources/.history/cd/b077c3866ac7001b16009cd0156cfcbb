@@ -1,0 +1,26 @@
+package msa06;
+
+class Arr2{
+	public void view(String name) {
+		System.out.println(name);
+	}
+	public void view(String name, int age) {
+		System.out.println(name);
+		System.out.println(age);
+	}
+}
+
+public class Access4{
+	
+	public static void main(String[] args) {
+		// hello 결과 나오도록 view 호출
+		Arr2 arr2 = new Arr2();	
+		arr2.view("hello");
+		
+		//view2 메서드 호출하여 홍길동 20 출력
+		arr2.view("홍길동", 20);
+		
+	}
+	
+}
+

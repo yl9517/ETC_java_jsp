@@ -1,0 +1,17 @@
+package msa10;
+
+public class A {
+/*
+ *  super,sub - t10.acc(접근지정자
+ * 
+ * 	* [형변환 체크] instanceof
+ * 
+ * 	* [접근지정자]
+ * 	   	private : 클래스 내에서만 접근
+ * 		default :
+ * 		protected :
+ * 		public : 전체 공개
+ * 
+ * 
+ */
+}

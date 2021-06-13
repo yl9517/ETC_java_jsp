@@ -1,0 +1,15 @@
+package msa07;
+
+public class A {
+/*
+ * person -> man
+ * 
+ * 
+ * 
+ *   * [캡슐화] 정보은닉 (private) 외부에서 직접접근 불가
+ *		-setter : 해당 메소드를 통해 필드값 변경
+ *		-getter : 해당 메소드를 통해 필드값 호출
+ * 
+ * 
+ */
+}

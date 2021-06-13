@@ -1,0 +1,15 @@
+package msa07;
+/*
+ * Á¤·Ä
+ * 
+ * 
+ */
+public class SortTest {
+
+	public static void main(String[] args) {
+
+		int[] arr = {20,52,30,10,31,5};
+
+	}
+
+}

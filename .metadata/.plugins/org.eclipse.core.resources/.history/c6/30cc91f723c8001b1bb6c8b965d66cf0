@@ -1,0 +1,12 @@
+package msa07;
+
+class Static2{
+	
+}
+
+public class StaticTest2 {
+
+	public static void main(String[] args) {
+	}
+
+}

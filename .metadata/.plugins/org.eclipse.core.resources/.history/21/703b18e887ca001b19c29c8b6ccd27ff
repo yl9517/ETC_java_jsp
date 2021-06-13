@@ -1,0 +1,12 @@
+package t10_2;
+
+import t10_1.Sample;
+
+public class SampleTest extends Sample{
+	
+	@Override
+	public void prt() {
+		System.out.println("prt");
+	}
+
+}

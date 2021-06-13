@@ -1,0 +1,38 @@
+package msa07;
+/*
+ *  static 추가설명
+ *  
+ *  [클래스 메서드] (정적메서드,static 메서드)  :  메서드 이름 앞에 static을 붙임
+ *  사용방법 : 클래스이름.메소드();
+ *  
+ *   	Static void prt(){
+ *   		
+ *   	}
+ *   
+ *   
+ *   클래스 메소드에 사용할 수 있는 변수 : 지역변수(매개변수 포함),
+ *   
+ *   
+ *   
+ * 
+ */
+class Static2{
+	
+	static String addr="seoul";  //클래스 변수
+	
+	public static void prt(int su) { //클래스 메소드(매개변수) 		//매개변수->지역변수라고도 함
+		
+		String name = "hong"; //지역변수 	 //메소드가 호출될때 지역변수 메소드 할당 됨
+		System.out.println("prt!!");
+		System.out.println(addr);
+	}
+	
+}
+
+public class StaticTest2 {
+
+	public static void main(String[] args) {
+		Static2.prt(10); //객체 만들지 않고 클래스의 메소드 바로 호출
+	}
+
+}

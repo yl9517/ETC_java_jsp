@@ -1,0 +1,21 @@
+package msa10;
+
+public class A {
+/*
+ *  super,sub - t10.acc(접근지정자) -> t10_3 abstract(추상클래스)
+ * 
+ * 	* [형변환 체크] instanceof
+ * 
+ * 	* [접근지정자]
+ * 	   	private : 클래스 내에서만 접근
+ * 		default :
+ * 		protected :
+ * 		public : 전체 공개
+ * 
+ * 
+ * 	* [추상클래스] abstract  | 사용법 : abstract class 클래스명{   }
+ * 		객체생성을 하지 못하는 클래스 (오로지 상속을 위한 클래스)
+ * 
+ * 
+ */
+}

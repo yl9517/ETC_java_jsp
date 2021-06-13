@@ -1,0 +1,13 @@
+package msa10;
+
+public class P339_5_supersub {
+
+	public static void main(String[] args) {
+		P339_5_super ins = new P339_5_sub("hong", 10);
+		
+		
+		System.out.println(ins.name);
+	}
+	
+
+}

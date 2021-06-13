@@ -1,0 +1,20 @@
+package msa08;
+
+class Bank{
+	public void prt() {
+		System.out.println("Parent-prt method");
+	}
+}
+
+class CreditLine extends Bank{
+	
+}
+public class OverrideTest2 {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

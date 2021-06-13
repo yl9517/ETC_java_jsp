@@ -1,0 +1,15 @@
+package msa07;
+
+public class ManTest {
+
+	public static void main(String[] args) {
+		Man ins = new Man();
+		ins.modify("hong", 20);
+		ins.print();
+		
+		System.out.println("---");
+		ins.modify("kim", "¼­¿ï");
+		ins.print();
+	}
+
+}

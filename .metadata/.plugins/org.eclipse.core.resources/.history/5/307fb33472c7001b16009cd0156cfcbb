@@ -1,0 +1,57 @@
+package msa06;
+
+import java.util.Scanner;
+
+/*
+ * [문제1]
+ * 1. Dog 클래스를 만들고 멤버변수 name,type 를 만들기 (모두String)
+ * 2. getter,setter,생성자 생성
+ * 3. dog 클래스 이용하여 dogTest클래스와 배열크기가 5인 dog[] 배열 만든 후 dog 인스턴스를 5개 생성하여 배열에 추가
+ * 4. for문과 향상된 for문에서 dog클래스의 getter메소드를 이용하여 추가된 내용 출력
+ * 
+ * 
+ * 힌트) 1. String도 클래스다, 클래스도 배열을 만들수 있다
+ * 		2.클래스명 변수명=null; 변수명.출력메소드(); ▶  NullPointerException
+
+ */
+public class DogTest_question{
+	
+	public static void main(String[] args) {
+	
+		
+		Dog[] dogs = new Dog[5]; //배열
+
+
+		Dog ins = new Dog(); //인스턴스
+		ins.setName("뽀삐");
+		ins.setType("말티즈");
+		dogs[0] = ins;
+		System.out.println(ins.getName()+" "+ins.getType());
+		
+		Dog ins2 = new Dog(); //인스턴스
+		ins2.setName("누렁이");
+		ins2.setType("진돗개");
+		dogs[1] = ins;
+		
+		Dog ins3 = new Dog(); //인스턴스
+		ins3.setName("초코");
+		ins3.setType("푸들");
+		dogs[2] = ins;
+		
+		Dog ins4 = new Dog(); //인스턴스
+		ins4.setName("감자");
+		ins4.setType("불독");
+		dogs[3] = ins;
+		
+		Dog ins5 = new Dog(); //인스턴스
+		ins5.setName("콩이");
+		ins5.setType("치와와");
+		dogs[4] = ins;
+		
+
+		
+		
+		
+	}
+	
+}

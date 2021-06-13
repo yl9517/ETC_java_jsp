@@ -1,0 +1,18 @@
+package msa06;
+/*
+ * Ä¸½¶È­ (private)
+ * 
+ */
+public class Access2{
+	
+	private String name;
+	
+	public Access2(String name) {
+		this.name=name;
+	}
+	
+	public void prt() {
+		System.out.println(name);
+	}
+	
+}

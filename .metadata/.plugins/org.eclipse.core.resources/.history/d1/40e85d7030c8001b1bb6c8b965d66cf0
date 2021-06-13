@@ -1,0 +1,17 @@
+package msa07;
+
+class Final2{
+
+	static final int su=10;
+	final static int su2=20;
+	
+	
+}
+
+public class StaticTest4 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

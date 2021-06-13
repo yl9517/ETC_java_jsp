@@ -1,0 +1,33 @@
+package msa08;
+
+// super(); = 부모클래스의 생성자 호출
+
+class Super4{
+	//생성자
+	public Super4() {
+		System.out.println("Super4 Constructor");
+	}
+	
+}
+
+class Sub4 extends Super3{
+	
+	public Sub4() {
+		super();
+		System.out.println("Sub4 Constructor");
+	}
+	
+	
+}
+
+public class SuperSubTest4 {
+
+	public static void main(String[] args) {
+		Super4 ins = new Super4(); //클래스의 생성자 이용하여 인스턴스화
+		Sub4 ins2 = new Sub4();
+		
+		
+		
+	}
+
+}

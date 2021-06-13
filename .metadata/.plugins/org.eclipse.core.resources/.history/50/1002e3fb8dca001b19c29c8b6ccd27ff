@@ -1,0 +1,14 @@
+package msa10;
+
+public class P339_5_sub extends P339_5_super {
+
+	private int name;
+	private int studentNo;
+	
+	public P339_5_sub(String name,int StudentNo) {
+		this.name=name;
+		this.studentNo=StudentNo;
+	}
+	
+
+}

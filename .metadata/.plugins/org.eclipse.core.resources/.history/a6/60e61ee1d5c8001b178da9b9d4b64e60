@@ -1,0 +1,21 @@
+package msa08;
+
+// super(); = 부모클래스의 생성자 호출
+
+class Super4{
+	
+}
+
+class Sub4 extends Super3{
+	
+	
+}
+
+public class SuperSubTest4 {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

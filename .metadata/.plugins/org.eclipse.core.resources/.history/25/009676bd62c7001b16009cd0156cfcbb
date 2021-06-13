@@ -1,0 +1,14 @@
+package msa06;
+/*
+ * Ä¸½¶È­ (private)
+ * 
+ */
+public class Access2Test {
+	public static void main(String[] args) {
+		Access2 ins = new Access2("È«±æµ¿");
+		//ins.name="hong"; //°´Ã¼ÀÇ name ÀÎ½Ä ¾ÈµÊ
+		
+		
+		
+	}
+}

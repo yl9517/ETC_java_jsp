@@ -1,0 +1,8 @@
+package msa10;
+
+public class P339_5_sub extends P339_5_super {
+
+	Private int studentNo;
+	
+
+}

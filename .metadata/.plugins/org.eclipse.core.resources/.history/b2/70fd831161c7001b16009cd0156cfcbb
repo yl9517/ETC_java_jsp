@@ -1,0 +1,17 @@
+package msa06;
+/*
+ * Ä¸½¶È­ (private)
+ * 
+ */
+public class Access2{
+	
+	private String name;
+	
+	public static void main(String[] args) {
+
+		Access2 ins = new Access2();
+		ins.name="hong"; //»ç¿ë °¡´É
+		System.out.println(ins.name);
+	}
+	
+}

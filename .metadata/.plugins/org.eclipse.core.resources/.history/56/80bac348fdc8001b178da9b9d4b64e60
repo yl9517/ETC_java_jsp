@@ -1,0 +1,22 @@
+package msa08;
+
+class Member{
+	private String name;
+	private String id;
+	private String password;
+	private int age;
+	
+	public Member(String name,String id) {
+		this.name=name;
+		this.id=id;
+	}
+	
+}
+public class P279_15 {
+
+	public static void main(String[] args) {
+		Member m1 = new Member("È«±æµ¿", "hong");
+		Member m2 = new Member("±èÀÚ¹Ù", "java");
+	}
+
+}

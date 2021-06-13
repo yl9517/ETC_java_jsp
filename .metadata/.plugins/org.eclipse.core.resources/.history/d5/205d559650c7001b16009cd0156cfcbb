@@ -1,0 +1,40 @@
+package msa06;
+
+class Person4{
+	
+	//필드
+	String name;
+	int age;
+	String addr;
+	String phone;
+	
+	//생성자	
+	Person4(String name, int age,String addr,String phone){
+		
+		this.name = name; // this : 참조변수  (자기 자신의 객체를 가르킴)
+		this.age = age;
+		this.addr=addr;
+		this.phone=phone;
+	}
+	Person4(String name, int age,String addr){	
+		this.name = name; 
+		this.age = age;
+		this.addr=addr;
+	}
+	Person4(String name, int age){	
+		this.name = name;
+		this.age = age;
+	}
+	Person4(String name){	
+		this.name = name;
+	}
+	
+}
+public class ConstructorTest4{
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+}

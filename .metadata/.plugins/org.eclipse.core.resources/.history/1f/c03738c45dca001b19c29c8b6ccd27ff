@@ -1,0 +1,11 @@
+package t10;
+
+public class AccTest extends Acc1{
+
+	public static void main(String[] args) {
+		Acc1 ins = new Acc1();
+		System.out.println(ins.name);
+
+	}
+
+}

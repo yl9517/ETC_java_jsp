@@ -1,0 +1,18 @@
+package msa09;
+
+public class Sub1 extends Super1{
+
+	private String hakno;
+	private String dept;
+	
+	public Sub1(String name,int age, String addr,String hakno,String dept) {
+		super(name,age,addr);
+		this.hakno=hakno;
+		this.dept=dept;
+	}
+	
+	public Sub1() {
+		
+	}
+
+}

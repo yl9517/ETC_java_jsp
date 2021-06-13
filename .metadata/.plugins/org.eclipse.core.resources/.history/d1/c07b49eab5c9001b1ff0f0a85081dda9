@@ -1,0 +1,17 @@
+package msa09;
+
+public class A {
+/*
+ * 
+ * 
+ * super&sub -> final -> Trans(객체 형변환)
+ * 
+ * final 변수 : 상수
+ * final 메소드 : 오버라이딩 불가
+ * final 클래스 : 상속불가 (종단 클래스)
+ * 
+ * 
+ * 
+ * 
+ */
+}

@@ -1,0 +1,32 @@
+package msa06;
+
+class Student3{
+	//필드
+	String name;
+	int age;
+	String juso;
+	
+	//생성자	
+	Student3(String name, int age,String juso){
+		this.name = name; // this : 자기 자신의 객체를 가르킴
+		this.age = age;
+		this.juso=juso;
+	}
+	void print() {
+		System.out.println("이름 : "+name);
+		System.out.println("나이 : "+age);
+		System.out.println("주소 : "+juso);
+	}
+}
+public class ConstructorTest3{
+
+	public static void main(String[] args) {
+		Student3 s1 = new Student3("홍길동", 10, "서울");
+		Student3 s2 = new Student3("홍길순", 20, "경기");
+		Student3 s3 = new Student3("홍길삼", 30, "서울");
+		
+		s1.print();
+		s2.print();
+		
+	}
+}

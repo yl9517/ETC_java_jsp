@@ -1,0 +1,24 @@
+package msa08;
+
+class Phone{ //부모클래스
+	
+	public void prt() {
+		System.out.println("super1-prt method");
+	}
+}
+
+class SmartPhone extends Phone{ //super1 클래스 상속받은 자식클래스
+	
+	public void draw() {
+		System.out.println("sub1-draw method");
+	}
+	
+}
+
+public class SuperSubTest2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

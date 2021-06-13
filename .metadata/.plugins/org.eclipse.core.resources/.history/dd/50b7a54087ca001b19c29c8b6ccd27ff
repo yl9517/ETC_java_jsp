@@ -1,0 +1,9 @@
+package t10_1;
+
+public class Sample {
+	
+	public void prt() {
+		System.out.println("prt");
+	}
+
+}

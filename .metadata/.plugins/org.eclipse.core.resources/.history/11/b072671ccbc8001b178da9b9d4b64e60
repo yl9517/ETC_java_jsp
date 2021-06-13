@@ -1,0 +1,9 @@
+package msa08;
+
+public class ConstructorTest {
+
+	public static void main(String[] args) {
+		char[] value = new char[1];
+	}
+
+}

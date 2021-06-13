@@ -1,0 +1,12 @@
+package msa08;
+
+public class ConstructorTest {
+
+	
+	public static void main(String[] args) {
+
+		int data = Math.abs(-50);
+		System.out.println(data);
+	}
+
+}

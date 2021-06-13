@@ -1,0 +1,14 @@
+package msa10;
+
+public class SuperSubTest1 {
+
+	public static void main(String[] args) {
+
+		Super1 ins = new Sub1(); //up Casting
+		
+		Sub1 ins2 = (Sub1) new Super1();
+		
+		
+	}
+
+}

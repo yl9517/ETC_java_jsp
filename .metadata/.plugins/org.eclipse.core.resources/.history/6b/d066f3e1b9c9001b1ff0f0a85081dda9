@@ -1,0 +1,34 @@
+package msa09;
+
+
+class Trans2{
+	
+	public void prt() {
+		System.out.println("Tr1...prt method");
+	}
+	public void view() {
+		System.out.println("Tr1...view method");
+	}
+}
+
+class SubTran2 extends Trans2{
+	
+	public void draw() {
+		System.out.println("SubTr1...draw");
+	}
+	@Override
+	public void view() {
+		super.view();
+		System.out.println("SubTr1...view");
+	}
+	
+}
+
+
+public class TransTest2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

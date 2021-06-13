@@ -1,0 +1,5 @@
+package msa08;
+
+public class Bank_CreditLine extends Bank {
+
+}

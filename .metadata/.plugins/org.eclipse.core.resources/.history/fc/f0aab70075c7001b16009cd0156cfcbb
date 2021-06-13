@@ -1,0 +1,42 @@
+package msa06;
+
+/*
+ * [문제1]
+ * 1. Dog 클래스를 만들고 멤버변수 name,type 를 만들기 (모두String)
+ * 2. getter,setter,생성자 생성
+ * 3. dog 클래스 이용하여 dogTest클래스와 배열크기가 5인 dog[] 배열 만든 후 dog 인스턴스를 5개 생성하여 배열에 추가
+ * 4. for문과 향상된 for문에서 dog클래스의 getter메소드를 이용하여 추가된 내용 출력
+ * 
+ * 
+ * 힌트) 1. String도 클래스다, 클래스도 배열을 만들수 있다
+ * 		2.클래스명 변수명=null; 변수명.출력메소드(); ▶  NullPointerException
+
+ */
+class Dog{
+	private String name;
+	private String type;
+	
+	public Dog(String name,String type){
+		this.name = name;
+		this.type=type;
+	}
+	
+	//메소드
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return name;	
+	}
+	
+	public void setType(String type) {
+		this.type=type;
+	}
+	public String getType() {
+		return type;
+	}
+	
+	
+}
+
+

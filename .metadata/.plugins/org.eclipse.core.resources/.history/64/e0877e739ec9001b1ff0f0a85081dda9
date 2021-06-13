@@ -1,0 +1,19 @@
+package msa09;
+
+public class Sub1 {
+
+	
+	private String name;
+	private int age;
+	private String addr;
+	private String hakno;
+	private String dept;
+	
+	public Sub1(String name,int age, String addr,String hakno,String dept) {
+		super(name,age,addr);
+		this.hakno=hakno;
+		this.dept=dept;
+	}
+	
+
+}

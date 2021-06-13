@@ -1,0 +1,20 @@
+package msa07;
+
+
+
+class Filed1{
+	private String name ="data1";
+	
+	public Filed1(String name) {
+		this.name = name;
+	}
+	public void prt() {
+		System.out.println(name);
+	}
+}
+public class FiledTest {
+	public static void main(String[] args) {
+		Filed1 ins = new Filed1("hello");
+		ins.prt();
+	}
+}

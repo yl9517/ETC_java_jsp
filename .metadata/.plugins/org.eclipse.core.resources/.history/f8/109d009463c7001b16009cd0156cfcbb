@@ -1,0 +1,17 @@
+package msa06;
+
+
+public class Arr{
+	
+	public void prt(String[] b) {
+		for(String index:b) {//b의 길이만큼 for문 반복
+			
+		}
+	}
+}
+
+public class Access3 {
+	public static void main(String[] args) {
+		
+	}
+}

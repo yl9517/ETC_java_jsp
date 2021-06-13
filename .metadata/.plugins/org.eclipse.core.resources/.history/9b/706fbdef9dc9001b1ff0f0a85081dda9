@@ -1,0 +1,11 @@
+package msa09;
+// String(String original) 
+
+
+public class Test {
+
+	public static void main(String[] args) {
+		String s1 = new String("hong");
+	}
+
+}
