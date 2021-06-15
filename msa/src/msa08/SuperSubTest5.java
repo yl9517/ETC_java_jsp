@@ -20,6 +20,7 @@ class Sub5 extends Super5{ //여러개의 부모클래스를 상속받을 수 X
 		super(name); //부모생성자 호출
 		this.age=age;
 		System.out.println(name+age);
+		
 	}
 	
 	

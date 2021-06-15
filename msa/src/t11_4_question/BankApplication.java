@@ -14,13 +14,19 @@ public class BankApplication {
 		System.out.println("-------------");
 		System.out.print("계좌번호 : ");
 		String ano = sc.next();
-		System.out.print("계좌주 : ");
-		String owner = sc.next();
-		System.out.print("초기입금액 : ");
-		int balance = sc.nextInt();
-		
-		accountArray[index++] = new Account(ano, owner, balance);
-		System.out.println("결과 : 계좌가 생성되었습니다.");
+
+		Account thisAccount = findAccount(ano); //계좌번호 찾기
+		if(thisAccount==null) {
+			System.out.print("계좌주 : ");
+			String owner = sc.next();
+			System.out.print("초기입금액 : ");
+			int balance = sc.nextInt();
+
+			accountArray[index++] = new Account(ano, owner, balance);
+			System.out.println("결과 : 계좌가 생성되었습니다.");
+		}
+		else
+			System.out.println("결과 : 동일한 계좌번호가 있습니다.");
 	}
 	
 	//계좌목록
@@ -67,9 +73,14 @@ public class BankApplication {
 			System.out.println("결과 : 일치하는 계좌번호가 없습니다.");
 		else {
 			System.out.print("출금액 : ");
-			thisAccount.setBalance(thisAccount.getBalance()-sc.nextInt());
-	
-			System.out.println("결과 : 출금이 성공되었습니다.");		
+			int money = sc.nextInt();
+			
+			if(thisAccount.getBalance()<money) 
+				System.out.println("결과 : 잔고가 부족합니다.");
+			else {
+				thisAccount.setBalance(thisAccount.getBalance()-money);
+				System.out.println("결과 : 출금이 성공되었습니다.");	
+			}
 		}
 	}
 	
