@@ -3,6 +3,10 @@ abstract class Dog{
 	private String name;
 	public static int age;
 	
+	public Dog() {
+		
+	}
+	
 	public static void prt() {  //static 사용가능
 		System.out.println("prt");
 	}
