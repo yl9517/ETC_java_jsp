@@ -20,7 +20,7 @@ public class A {
  *							공통점 : 객체 생성 못함
  *
  *								차이점
- * 	  extends로 상속							implements로 상속
+ * 	  extends로 상속							implements로 상속 (클래스가 인터페이스 상속받을때)
  * 	    단일상속								여러개상속 가능
  *    일반메소드 + 추상메소드 + static메소드		public abstract 메소드 + static 메소드 + default메소드
  *    생성자 O								생성자 X

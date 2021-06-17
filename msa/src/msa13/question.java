@@ -59,13 +59,14 @@ public class question {
 			//메일 자르기
 			String[] mail  = email.split("@"); 
 			String id = mail[0];
-			String domain = mail[1];
+			String domain = mail[1];			
 			
 			arr[i] = new Student(name, email,id,domain); //인스턴스 추가
 		}
 
 		System.out.printf("%s\t %-25s\t %-10s\t %-10s","이름","이메일","아이디","도메인");
 		System.out.println();
+		
 		for(Student index:arr) {
 			System.out.printf("%s\t %-20s\t %-10s\t %-10s",index.getName(),index.getEmail(),index.getId(),index.getDomain());
 			System.out.println();
