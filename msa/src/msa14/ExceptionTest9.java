@@ -19,9 +19,12 @@ public class ExceptionTest9 {
 			if(su<0)
 				throw new UserException();
 			System.out.println("su :"+su);
-		}catch (UserException e) {
-			System.out.println(e.getMessage());
-			e.printStackTrace();
+			
+		}catch (UserException e) {		
+			System.out.println(e); //e.toString()
+			System.out.println(e.getMessage()); //메세지만 출력
+			e.printStackTrace(); //가급적이면 쓰지X
+			
 		}catch (Exception e) { //뒤로 갈수록 더 많은 자식에게 해당되는 부모 exception이 받아주어야함
 			System.out.println(e);
 		}

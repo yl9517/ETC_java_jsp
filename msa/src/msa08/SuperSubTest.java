@@ -25,6 +25,7 @@ public class SuperSubTest {
 		ins2.prt(); //상속받았으므로 부모의 메소드도 사용 가능
 		ins2.draw();
 
+		Sub1 ins3 = (Sub1) new Super1();
 	}
 
 }

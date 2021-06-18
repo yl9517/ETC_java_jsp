@@ -25,6 +25,8 @@ public class A {
  *  	버퍼기능을 포함한 문자열 표현, 조작을 하기위한 문자열 객체 
  * 	* [StringBuffer] : 동기화 처리  
  * 	* [StringBuilder] : 비동기처리 (속도가 높다.)
+
+ * 
  * 
  * 
  * 임계역역 (critical section) : 공유자원
