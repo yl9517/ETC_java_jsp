@@ -20,7 +20,7 @@ class Aimple implements A{
 public class InterTest2 {
 
 	public static void main(String[] args) {
-//		A ins = new A(); //인터페이스 상속 못받음.  객체 만들려면 일반클래스에서 인터페이스 상속
+//		A ins = new A(); //인터페이스로 객체 못만듦
 		
 		Aimple ins2 = new Aimple();
 		ins2.view();
