@@ -23,7 +23,7 @@ public class FileTest2_reader {
 //				
 //				if(str==null) //문자끝나면 null출력되므로
 //					break;		
-				// 이걸 바로 whiel문 조건문에 넣기
+				// ▶ 이걸 바로 while 조건문에 넣기
 				
 				System.out.println(str);
 			}
