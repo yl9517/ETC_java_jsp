@@ -21,6 +21,7 @@ public class StringTest {
 		
 		String result = a3.concat("12345"); //concat : ¿¬°á
 		System.out.println(result);
+		System.out.println(a2.equals(a3));
 		
 		
 	}

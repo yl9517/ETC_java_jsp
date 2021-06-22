@@ -14,11 +14,6 @@ class Sample2{ //extend Object
 		return "Sample2 [name=" + name + ", age=" + age + "]";
 	}
 	
-//	@Override
-//	public String toString() {
-//		return "name:"+name+", age :"+age;
-//	}
-	
 }
 
 public class ObjectTest2 {

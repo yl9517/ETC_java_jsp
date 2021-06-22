@@ -1,4 +1,4 @@
-package msa15;
+ package msa15;
 /*
  * StudentDTO -학번,이름,나이 받기
  * UserArray - 자료추가/삭제/수정/출력/조회
