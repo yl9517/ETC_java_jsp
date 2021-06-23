@@ -21,7 +21,7 @@ public class StringTest2 {
 		
 		String data1="hong";
 		
-		int result = data1.compareTo("hon"); //hong이 hon보다 더 크므로 1
+		int result = data1.compareTo("hon"); //hong이 hon보다 더 크므로 양수
 		System.out.println(result);
 		int result2 = data1.compareTo("hong");//hong이 hong이 같으므로 0
 		System.out.println(result2);
@@ -29,6 +29,7 @@ public class StringTest2 {
 		System.out.println(result3);
 		
 
+		
 	}
 
 }

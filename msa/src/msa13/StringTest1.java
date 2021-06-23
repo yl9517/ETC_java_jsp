@@ -8,9 +8,9 @@ public class StringTest1 {
 		String name3 = new String("hong"); //메모리 새로 할당해서 만든 문자
 		
 		//== : 메모리 비교
-		System.out.println(name==name2); //같은 곳을 가르키므로 true
-		System.out.println(name==name3); 
-		System.out.println(name.equals(name2));
+		System.out.println(name==name2);  //같은 곳을 가르키므로 true
+		System.out.println(name==name3);  //false
+		System.out.println(name.equals(name2)); // true
 		System.out.println(name.equals(name3)); //원래라면 다르지만 자동 toString을 통해 형태가 같으면 같다고 생각하자.해서 true
 	}
 
