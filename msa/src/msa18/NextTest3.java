@@ -3,7 +3,7 @@ package msa18;
 class Outer3{ 
 	public String irum="aa";
 	
-	static class Inner3{	//static inner class
+	static class Inner3{	//static inner class //inner3은 outer3을 모름
 		String name;
 		public static String nick;
 		

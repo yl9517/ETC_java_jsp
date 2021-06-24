@@ -4,8 +4,6 @@ interface Runnable{
 	
 	void run();
 	
-
-	
 } //Runnable 인터페이스
 
 class Sample1{

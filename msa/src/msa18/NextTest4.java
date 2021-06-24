@@ -9,7 +9,7 @@ class Outer4{
 	
 		String name="hello"; //지역변수
 	
-		class Sample {	//지역 클래스(local inner class)
+		class Sample2 {	//지역 클래스(local inner class)
 			 
 			void paint() {
 				System.out.println(dept);
@@ -18,12 +18,13 @@ class Outer4{
 			}
 		} //sample클래스
 		
-		Sample ins = new Sample();
+		Sample2 ins = new Sample2();
 		ins.paint();
 		
 	} //prt메소드
 	
 	public void view() {
+//		Sample2 ins = new Sample2();  //오류
 
 	}
 	
@@ -35,6 +36,8 @@ public class NextTest4 {
 
 		Outer4 ins = new Outer4();
 		ins.prt();
+		System.out.println("----");
+		ins.view();
 		
 	}
 

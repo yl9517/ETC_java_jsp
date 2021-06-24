@@ -48,6 +48,7 @@ class StudentDTO{
 class UserMap{
 	Scanner sc = new Scanner(System.in);
 	HashMap<String, StudentDTO> list = new HashMap<String, StudentDTO>();
+	StudentDTO ins = null;
 		
 	//추가
 	public void add() {
@@ -61,6 +62,7 @@ class UserMap{
 		
 		//추가
 		list.put(hakNo, new StudentDTO(hakNo, name, age));	
+
 	}
 	
 	//삭제
@@ -101,21 +103,22 @@ class UserMap{
 			System.out.println(ita.next());
 		}
 		
+		
 	}
 	
 	//학번찾기
 	public boolean findNo(String hakNo) {
 		
-		Iterator<String> ita = list.keySet().iterator();
-		
-		while(ita.hasNext()) {
-			String key = ita.next();
-			if(key.equals(hakNo)) {
-				StudentDTO value = list.get(key);	
-				return true;
-			}
-		}
-		return false;
+//		Iterator<String> ita = list.keySet().iterator();
+//		
+//		while(ita.hasNext()) {
+//			String key = ita.next();
+//			if(key.equals(hakNo)) {
+//				StudentDTO value = list.get(key);	
+//				return true;
+//			}
+//		}
+		return list.containsKey(hakNo);
 
 	}
 }

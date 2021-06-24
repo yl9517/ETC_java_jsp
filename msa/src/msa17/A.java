@@ -16,7 +16,7 @@ public class A {
  * 		표준입출력  System.out   System.in
  * 		파일	   FileReader/FileWriter  FileInputStream/FileOutputStream
  * 	[보조클래스]
- * 		=> InputStreamReader / BufferedReader / BufferedWriter
+ * 		=> 그외 (InputStreamReader / BufferedReader / BufferedWriter / objectOutputStream / ObjectInputStream(Sirialize 상속)...)
  * 
  * 차이 : 기반클래스는 직접 쓰고 읽는 기능 O
  *  	 보조클래스는 직접 쓰고 읽는 기능 X
