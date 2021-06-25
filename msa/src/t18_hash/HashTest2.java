@@ -27,8 +27,14 @@ public class HashTest2 {
 		hm.put(new Irum("김", "원겸"), 29) ;
 		hm.put(new Irum("이", "채하"), 29);
 		
-		int age = hm.get(new Irum("김","유진"));  //새로운 객체이므로 값 X, 그렇다면 원래 객체 값 뽑아내느ㅡㄴ 방법은?
-		System.out.println(age);
+		Irum ir = new Irum("이", "여름");
+		hm.put(ir,24);
+		
+//		int age = hm.get(new Irum("김","유진"));  //새로운 객체이므로 값 X, 그렇다면 원래 객체 값 뽑아내느ㅡㄴ 방법은?
+		int age2 = hm.get(ir);
+		
+//		System.out.println(age);
+		System.out.println(age2);
 	}
 
 }
