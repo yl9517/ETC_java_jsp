@@ -17,6 +17,8 @@ public class ExceptionTest3 {
 		
 		// throws = 流立俺涝x 
 		// try...catch = 流立 贸府
+		String data=null;
+		System.out.println(data.toString());
 	}
 
 }

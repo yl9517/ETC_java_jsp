@@ -8,8 +8,8 @@ public class p_ThreadTest {
 		p_ProductTh pro = new p_ProductTh(a);
 		p_ConsumeTh con = new p_ConsumeTh(a);
 		
-		pro.start();
 		con.start();
+		pro.start();
 
 	}
 

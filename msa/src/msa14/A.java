@@ -16,6 +16,7 @@ public class A {
  *  						1. RunTimeException   2. RunTime捞 酒囱 Exception 
  *  							=>角青 吝 坷幅				=> checked Exception
 
+
    [checked Exception] 抗寇贸府 
       流立 贸府X, 逞扁扁 : throws
       流立 贸府 : try..catch (..finally)

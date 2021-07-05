@@ -1,5 +1,8 @@
 package msa14;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -7,7 +10,7 @@ import java.util.StringTokenizer;
 
 public class StringTok {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		StringTokenizer stk = new StringTokenizer("hong gil dong"); //알아서  공백 기준으로 분리
 		
@@ -49,13 +52,12 @@ public class StringTok {
 		System.out.println();
 		
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.print("email : ");
-		String email = sc.next();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		StringTokenizer stk5 = new StringTokenizer(email,"@");
-		System.out.println("이메일:"+stk5.nextToken());
-		System.out.println("이메일:"+stk5.nextToken());
+		System.out.println("이메일 입력 ");
+		StringTokenizer stk5 = new StringTokenizer(br.readLine(),"@");
+		System.out.println("이메일1 : "+stk5.nextToken());
+		System.out.println("이메일2 : "+stk5.nextToken());
 		
 		
 		

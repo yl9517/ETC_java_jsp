@@ -10,6 +10,7 @@ public class BankTest {
 		
 		Thread th1 = new Thread(j1);
 		Thread th2 = new Thread(j2);
+//		Thread th3 = new Thread(new B_ThDeposit(bank));
 		
 		th1.start();
 		th2.start();

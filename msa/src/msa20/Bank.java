@@ -18,6 +18,7 @@ public class Bank {
 		balance-=money;
 		System.out.println("출금 | 잔액 : "+balance);
 	}
+	
 	//입금
 	public synchronized void deposit(int money) {
 		balance+=money;

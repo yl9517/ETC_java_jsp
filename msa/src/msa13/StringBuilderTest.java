@@ -6,8 +6,8 @@ public class StringBuilderTest {
 		StringBuilder sb = new StringBuilder("abc");
 		
 		//append : 추가
-		sb.append("hong gil dong");
-		sb.append("hello",1,2); //1번째~2-1번째까지 인덱스 추가
+		sb.append(" hong gil dong ");
+		sb.append("hello",0,2); //0번째~(2-1)번째까지 인덱스 추가 -> he
 		System.out.println(sb);
 				System.out.println("---------");
 

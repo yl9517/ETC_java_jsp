@@ -8,7 +8,8 @@ public class p_ConsumeTh extends Thread {
 	}
 	
 	public void run() {
-		for(int i=1; i<100; i++) {
+		for(int i=1; i<20; i++) {
+			
 			synchronized (procon) {
 				int good = procon.get();
 				System.out.println(good+"번째 자원을 소비했습니다");
