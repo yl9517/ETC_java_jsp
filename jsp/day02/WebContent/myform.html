@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 아이디,패스워드,이름,성별, 취미[영화,음악,운동, 프로그래밍], 주소[서울,경기,강원],비고-->
+	<form method="get" action="result">
+		<ul>
+			<li>
+				<label for="id">아이디</label>
+				<input type="text" id="id" name="id">
+			</li>	
+			<li>
+				<label for="pwd">패스워드</label>
+				<input type="password" id="pwd" name="pwd">
+			</li>
+			<li>
+				<label for="name">이름</label>
+				<input type="text" id="name" name="name">
+			</li>
+			<li>
+				<label>성별</label>
+				<input type="radio" id="m" name="gender" value="남자">
+				<label for="m">남</label>
+				<input type="radio" id="w" name="gender" value="여자">
+				<label for="w">여</label>
+			</li>
+			<li>
+				<label>취미</label>
+				<input type="checkbox" id="f1" name="fav" value="영화">
+				<label for="f1">영화</label>
+				<input type="checkbox" id="f2" name="fav" value="음악">
+				<label for="f2">음악</label>
+				<input type="checkbox" id="f3" name="fav" value="운동">
+				<label for="f3">운동</label>
+				<input type="checkbox" id="f4" name="fav" value="프로그래밍">
+				<label for="f4">프로그래밍</label>
+			</li>
+			<li>
+				<label for="id">주소</label>
+				<select id="addr" name="addr">
+					<option value="서울">서울</option>
+					<option value="경기">경기</option>
+					<option value="강원">강원</option>
+				</select>
+				
+			</li>
+			<li>
+				<label>비고</label><br>
+				<textarea id="talk" name="talk" rows="5" cols="50"></textarea>
+			</li>
+			<li>
+				<input type="submit" value="등록">
+				<input type="reset" value="취소">
+			</li>
+			
+	
+		</ul>
+	</form>
+</body>
+</html>

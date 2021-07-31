@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+table{
+	border-collapse: collapse;
+}
+table thead tr{
+	background-color: silver;
+}
+td,th{
+	border:1px solid silver;
+}
