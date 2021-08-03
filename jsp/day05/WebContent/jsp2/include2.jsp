@@ -23,4 +23,4 @@
 <div class="right"><jsp:include page="center.jsp"/>  </div>
 <div class="bottom"><jsp:include page="bottom.jsp"/>  </div>
 </body>
-</html>
+</html>                                                                                                                                                                                       

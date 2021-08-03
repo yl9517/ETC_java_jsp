@@ -57,7 +57,9 @@
 	int bno = Integer.parseInt(request.getParameter("bno"));
 
 	BoardDAO dao = new BoardDAO();	
+	dao.upRead(bno);
 	BoardDTO dto = dao.getone(bno);
+	
 %>
 	<div id="wrap">
 		<h2><%=dto.getBtitle() %></h2>

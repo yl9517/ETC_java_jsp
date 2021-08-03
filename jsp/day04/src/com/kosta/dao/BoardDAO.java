@@ -42,7 +42,7 @@ public class BoardDAO {
 	}
 	
 	//전체 게시글 가져오기
-	public List<BoardDTO> getList() {
+	public List<BoardDTO> getList(String search, String searchtxt) {
 		Connection conn = getConnection();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -50,11 +50,25 @@ public class BoardDAO {
 		StringBuilder sql = new StringBuilder();
 		sql.append("select bno, btitle, bcontent, bwriter, bwritedate, breadno from board");
 		
+	if(!("".equals(search)) && !("".equals(searchtxt))){
+		if("btitle".equals(search)) 
+			sql.append(" where btitle like ?");
+		else if("bcontent".equals(search))
+			sql.append(" where bcontent like ?");
+		else if("bwriter".equals(search))
+			sql.append(" where bwriter like ?");	
+	}
 
 		ArrayList<BoardDTO> arr = new ArrayList<BoardDTO>();
 		try {
 			pstmt =  conn.prepareStatement(sql.toString());			
+
+			if(!("".equals(search)) && !("".equals(searchtxt))){
+				pstmt.setString(1, "%"+searchtxt+"%");
+			}
+			
 			rs = pstmt.executeQuery();
+			
 			
 			while(rs.next()) {
 				BoardDTO dto = new BoardDTO();
@@ -113,6 +127,29 @@ public class BoardDAO {
 			disconn(conn, pstmt);
 		}
 		return dto;
+	}
+	
+	//조회수 증가
+	public void upRead(int bno) {
+		Connection conn  = getConnection();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		StringBuilder sql = new StringBuilder();
+		sql.append("update board set breadno=nvl(breadno,0)+1 where bno=?");	//nvl : breadno가 널값이라면 0으로 대체
+		
+		
+		try {
+			pstmt = conn.prepareStatement(sql.toString());
+			pstmt.setInt(1, bno);
+			
+			pstmt.executeUpdate();
+			
+		}catch (Exception e) {
+			System.out.println(e);
+		}finally {
+			disconn(conn, pstmt);
+		}
 	}
 	
 	//게시글 등록
