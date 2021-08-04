@@ -25,8 +25,6 @@
 
 	<div id="wrap">
 		<form method="post" action="insertAction.jsp">
-			<label for="id">사원번호</label>
-			<input type="text" id="id" name="id"> <br>
 			<label for="id">이름</label>
 			<input type="text" id="name" name="name"> <br>
 			<label for="hire">입사일</label>
@@ -34,7 +32,7 @@
 			<label for="sal">연봉</label>
 			<input type="text" id="sal" name="sal"> <br>
 			<label for="id">부서코드</label>
-			<input type="text" id="dept" name="dept"> <br><br>	
+			<input type="number" id="dept" name="dept"> <br><br>	
 			
 			<input type="submit" value="추가">		
 			<input type="reset" value="취소">		

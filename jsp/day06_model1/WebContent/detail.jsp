@@ -36,10 +36,9 @@
 <%
 	int id = Integer.parseInt(request.getParameter("id"));
 
-
-	EmpDAO dao = EmpDAO.getDAO();
-	
+	EmpDAO dao = EmpDAO.getDAO();	
 	EmpDTO dto = dao.getOne(id);
+
 %>
 
 	<div id="wrap">
@@ -53,7 +52,7 @@
 			<label for="sal">연봉</label>
 			<input type="text" id="sal" name="sal" value="<%=dto.getSalary()%>"> <br>
 			<label for="id">부서코드</label>
-			<input type="text" id="dept" name="dept" value="<%=dto.getDepartment_id()%>" > <br><br>	
+			<input type="number" id="dept" name="dept" value="<%=dto.getDepartment_id()%>" > <br><br>	
 			
 			<input type="submit" value="수정"><br>
 			

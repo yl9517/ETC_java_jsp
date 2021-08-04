@@ -49,7 +49,7 @@ public class EmpDAO {
 	//페이징처리 ( 전체 자료수)
 	public int getCount() {
 		StringBuilder sql = new StringBuilder();
-		sql.append("select count(*) from emp2");
+		sql.append("select count(*) from emp2 ");
 		
 		int count =0;
 		
@@ -119,39 +119,7 @@ public class EmpDAO {
 		return arr;
 	}
 	
-	
-	/*
-	 * //전체 자료 public List<EmpDTO> getAll(String topic, String keyword) { Connection
-	 * conn= getConnection(); PreparedStatement pstmt = null; ResultSet rs = null;
-	 * 
-	 * StringBuilder sql = new StringBuilder(); sql.
-	 * append("select employee_id, first_name, hire_date, salary, department_id ");
-	 * sql.append(" from emp2 ");
-	 * 
-	 * if(!("".equals(topic)) && !("".equals(keyword))) {
-	 * if("employee_id".equals(topic)) { sql.append(" where employee_id like ?"); }
-	 * else if("first_name".equals(topic)) { sql.append(" where first_name like ?");
-	 * } else if("department_id".equals(topic)) {
-	 * sql.append(" where department_id like ?"); } }
-	 * 
-	 * ArrayList<EmpDTO> arr = new ArrayList<EmpDTO>(); try { pstmt =
-	 * conn.prepareStatement(sql.toString()); if(!("".equals(topic)) &&
-	 * !(keyword.equals(""))) { pstmt.setString(1, "%"+keyword+"%"); }
-	 * 
-	 * rs = pstmt.executeQuery();
-	 * 
-	 * while(rs.next()) { int employee_id = rs.getInt("employee_id"); String
-	 * first_name = rs.getString("first_name"); String hire_date
-	 * =rs.getString("hire_date"); int salary =rs.getInt("salary"); int
-	 * department_id =rs.getInt("department_id");
-	 * 
-	 * EmpDTO dto = new EmpDTO(employee_id, first_name, hire_date, salary,
-	 * department_id);
-	 * 
-	 * arr.add(dto); } }catch(SQLException e) { System.out.println(e); }finally {
-	 * if(rs!=null) try { rs.close();} catch(SQLException e) {}; disconn(pstmt,
-	 * conn); } return arr; }
-	 */
+
 	
 	//자료하나
 	public EmpDTO getOne(int id) {
@@ -195,16 +163,15 @@ public class EmpDAO {
 		PreparedStatement pstmt = null;
 		
 		StringBuilder sql = new StringBuilder();
-		sql.append("insert into emp2 values(?,?,?,?,?) ");
+		sql.append("insert into emp2 values(seq2.nextval,?,?,?,?) ");
 		
 		int result =0;
 		try {
 			pstmt = conn.prepareStatement(sql.toString());
-			pstmt.setInt(1, dto.getEmployee_id());
-			pstmt.setString(2, dto.getFirst_name());
-			pstmt.setString(3, dto.getHire_date());
-			pstmt.setInt(4, dto.getSalary());
-			pstmt.setInt(5, dto.getDepartment_id());
+			pstmt.setString(1, dto.getFirst_name());
+			pstmt.setString(2, dto.getHire_date());
+			pstmt.setInt(3, dto.getSalary());
+			pstmt.setInt(4, dto.getDepartment_id());
 			
 			result = pstmt.executeUpdate();
 						

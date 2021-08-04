@@ -1,6 +1,5 @@
 package com.kosta.dto;
 
-import java.sql.Date;
 
 public class EmpDTO {
 	private int employee_id;

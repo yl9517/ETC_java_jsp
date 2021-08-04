@@ -12,7 +12,7 @@ class Person2{  //싱글톤 패턴
 
 public class Sample2 {
 	public static void main(String[] args) {
-		Person2 ins = new Person2();  //private라서 Person2 객체를 직접 가져와서 생성하지 못함!!!!!!
+	//	Person2 ins = new Person2();  //private라서 Person2 객체를 직접 가져와서 생성하지 못함!!!!!!
 		
 		Person2.getInstance();
 	}

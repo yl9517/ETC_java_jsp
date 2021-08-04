@@ -16,7 +16,12 @@
 	int id = Integer.parseInt(request.getParameter("id"));
 	String name = request.getParameter("name");
 	String hire = request.getParameter("hire");
-	int sal = Integer.parseInt(request.getParameter("sal"));
+	int sal = 0;
+	try{
+		sal =Integer.parseInt(request.getParameter("sal"));
+	}catch(Exception e){
+		
+	}
 	int dept = Integer.parseInt(request.getParameter("dept"));
 	
 	EmpDTO dto = new EmpDTO(id,name,hire,sal,dept);
