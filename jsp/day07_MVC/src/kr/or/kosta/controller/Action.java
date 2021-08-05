@@ -6,6 +6,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import kr.or.kosta.comm.util.Forward;
+
 public interface Action {
-	public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+	public Forward execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+	//String이 아니라 forward
 }

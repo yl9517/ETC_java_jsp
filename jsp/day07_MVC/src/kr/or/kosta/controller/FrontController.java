@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import kr.or.kosta.comm.util.Forward;
+
 
 @WebServlet("*.do")
 public class FrontController extends HttpServlet {
@@ -31,11 +33,32 @@ public class FrontController extends HttpServlet {
 		Action act = null;
 		if(path.equals("/list.do")) {
 			act = new ListAction();
+		}else if (path.equals("/insert.do")) {
+			act = new InsertAction();
+		}else if (path.equals("/insertresult.do")) {
+			act = new InsertResultAction();
+		}else if (path.equals("/detail.do")) {
+			act = new DetailAction();
+		}else if (path.equals("/del.do")) {
+			act = new DelAction();
+		}else if (path.equals("/modify.do")) {
+			act = new ModifyAction();
+		}else if (path.equals("/modifyresult.do")) {
+			act = new ModifyResultAction();
 		}
-		String urlpath = act.execute(request, response); //경로 받아옴
 		
-		RequestDispatcher disp = request.getRequestDispatcher(urlpath);
-		disp.forward(request, response);  //forward = disp에 제어권 넘기겠다
+		
+		Forward forward = act.execute(request, response); //경로 받아옴
+		
+		if(forward.isForward()) {
+			RequestDispatcher disp = request.getRequestDispatcher(forward.getPath());
+			disp.forward(request, response);
+		}else {
+			response.sendRedirect(forward.getPath());
+		}
+		
+//		RequestDispatcher disp = request.getRequestDispatcher(urlpath);
+//		disp.forward(request, response);  //forward = disp(list.jsp)에 제어권 넘기겠다
 		
 	}
 

@@ -28,7 +28,7 @@
 %>
 		<tr>
 			<td><%=dto.getBno() %></td>
-			<td><%=dto.getBtitle() %></td>
+			<td><a href="detail.do?bno=<%=dto.getBno()%>"><%=dto.getBtitle() %></a></td>
 			<td><%=dto.getBwriter() %></td>
 			<td><%=dto.getBwritedate() %></td>
 			<td><%=dto.getBreadno() %></td>
@@ -37,5 +37,6 @@
 	</tbody>
 
 </table>
+	<a href="insert.do"> 글쓰기 </a>
 </body>
 </html>
