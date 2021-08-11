@@ -10,10 +10,20 @@
 	$(document).ready(function(){
 		$('#btn').click(function(){
 			$.ajax({
-				url:"http://localhost:8080/day10/list.do"
+				url:"http://localhost:9080/day10/list.do"
 				, dataType : 'json'
 				, success : function(data){
 					consolo.log(data);
+					$('#result').empty();
+					$.each(data,function(index, item){
+						let result = "<tr><td>"+item.name+"</td>";
+						result+="<td>"+item.age+"</td>";
+						result+="<td>"+item.age+"</td>";
+						result+="</tr>";
+						
+						$('#result').append(result);
+					});
+					
 				}
 				, error : function(xhr) {
 					consolo.log('error');

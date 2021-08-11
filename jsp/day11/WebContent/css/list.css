@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+table{
+	border-collapse: collapse;
+	width:750px;
+}
+
+th, td{
+	border: 1px solid silver;
+}
+
+thead th{
+	background-color: yellow;
+}
+
+div.page1 a, div.page3 a{
+	margin-top: 20px;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+	margin: 0 5px;
+}
+div.page1 a:hover , div.page3 a:hover{
+	background-color: pink;
+}
+div.page2{
+	display: inline-block;
+	float: left;
+	margin-left: 5px;	
+}
+div.page2 a{
+	display: inline-block;
+	background-color : skyblue;
+	color: white;
+	text-decoration :none;
+	width: 20px;
+	text-align: center;
+}
+div.clear{
+	clear:both;
+}
+/*검색*/
+div.search{
+	margin-top: 10px;
+	display: inline-block;
+}
+

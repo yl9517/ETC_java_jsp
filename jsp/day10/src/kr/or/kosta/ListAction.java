@@ -15,7 +15,7 @@ import org.json.simple.JSONObject;
 /**
  * Servlet implementation class ListAction
  */
-@WebServlet("list.do")
+@WebServlet("/list.do")
 public class ListAction extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
